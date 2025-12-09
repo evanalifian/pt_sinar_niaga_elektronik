@@ -1,6 +1,6 @@
 <?php
 
-$nav_paths = ["pegawai", "pelanggan", "barang", "transaksi"]
+$nav_paths = ["pegawai", "pelanggan", "barang", "transaksi"];
 
 ?>
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top border-bottom">
@@ -17,6 +17,17 @@ $nav_paths = ["pegawai", "pelanggan", "barang", "transaksi"]
         </li>
         <?php endforeach ?>
       </ul>
+      <div class="dropdown">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="..." class="border rounded-circle" width="34" data-bs-toggle="dropdown" aria-expanded="false">
+        <ul class="dropdown-menu dropdown-menu-lg-end">
+          <li><a class="dropdown-item" href="#">Profil</a></li>
+          <li><a class="dropdown-item" href="#">Ubah Password</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li class="dropdown-item text-danger" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Log out
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>

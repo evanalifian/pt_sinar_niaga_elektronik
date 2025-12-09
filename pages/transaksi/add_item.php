@@ -1,5 +1,6 @@
 <?php
-include("../../config/database.php");
+
+require_once __DIR__ . "/../../config/database.php";
 
 $id = mysqli_real_escape_string($conn, $_POST['id_transaksi']);
 $kode = mysqli_real_escape_string($conn, $_POST['kode_barang']);
@@ -16,4 +17,3 @@ mysqli_query($conn, "INSERT INTO detail_transaksi (id_transaksi, kode_barang, ju
 
 // redirect kembali ke detail
 header("Location: detail.php?id=$id");
-?>

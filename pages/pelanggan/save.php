@@ -1,5 +1,6 @@
 <?php
-include("../../config/database.php");
+
+require_once __DIR__ . "/../../config/database.php";
 
 $id = mysqli_real_escape_string($conn, $_POST['id_pelanggan']);
 $nama = mysqli_real_escape_string($conn, $_POST['nama_pelanggan']);
@@ -14,4 +15,3 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo mysqli_error($conn);
 }
-?>

@@ -1,5 +1,6 @@
 <?php
-include("../../config/database.php");
+
+require_once __DIR__ . "/../../config/database.php";
 
 $id = mysqli_real_escape_string($conn, $_POST['id_transaksi']);
 $tgl = date("Y-m-d");
@@ -15,4 +16,3 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo mysqli_error($conn);
 }
-?>

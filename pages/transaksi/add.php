@@ -1,14 +1,10 @@
-<?php include("../../layouts/header.php"); ?>
-
+<?php require_once __DIR__ . "/../../layouts/header.php" ?>
 <h3>Tambah Transaksi</h3>
-
 <form action="save.php" method="post">
-
     <div class="mb-3">
         <label>ID Transaksi</label>
         <input type="text" name="id_transaksi" class="form-control" required>
     </div>
-
     <div class="mb-3">
         <label>Pelanggan</label>
         <select name="id_pelanggan" class="form-control">
@@ -20,7 +16,6 @@
             ?>
         </select>
     </div>
-
     <div class="mb-3">
         <label>Pegawai Melayani</label>
         <select name="id_pegawai" class="form-control">
@@ -32,7 +27,6 @@
             ?>
         </select>
     </div>
-
     <div class="mb-3">
         <label>Kode Cabang</label>
         <select name="kode_cabang" class="form-control">
@@ -44,9 +38,6 @@
             ?>
         </select>
     </div>
-
     <button class="btn btn-success">Lanjut ke Detail Barang</button>
-
 </form>
-
-<?php include("../../layouts/footer.php"); ?>
+<?php require_once __DIR__ . "/../../layouts/footer.php" ?>

@@ -1,9 +1,6 @@
-<?php include("../../layouts/header.php"); ?>
-
+<?php require_once __DIR__ . "/../../layouts/header.php" ?>
 <h3>Daftar Cabang</h3>
-
 <a href="add.php" class="btn btn-primary mb-3">Tambah Cabang</a>
-
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -25,19 +22,19 @@
 
         while ($row = mysqli_fetch_assoc($sql)) {
             echo "
-            <tr>
-                <td>{$row['kode_cabang']}</td>
-                <td>{$row['nama_cabang']}</td>
-                <td>{$row['alamat_cabang']}</td>
-                <td>{$row['no_telp']}</td>
-                <td>
-                    <a class='btn btn-warning btn-sm' href='edit.php?id={$row['kode_cabang']}'>Edit</a>
-                    <a class='btn btn-danger btn-sm' href='delete.php?id={$row['kode_cabang']}' onclick='return confirm(\"Hapus cabang?\")'>Hapus</a>
-                </td>
-            </tr>";
+                <tr>
+                    <td>{$row['kode_cabang']}</td>
+                    <td>{$row['nama_cabang']}</td>
+                    <td>{$row['alamat_cabang']}</td>
+                    <td>{$row['no_telp']}</td>
+                    <td>
+                        <a class='btn btn-warning btn-sm' href='edit.php?id={$row['kode_cabang']}'>Edit</a>
+                        <a class='btn btn-danger btn-sm' href='delete.php?id={$row['kode_cabang']}' onclick='return confirm(\"Hapus cabang?\")'>Hapus</a>
+                    </td>
+                </tr>
+            ";
         }
         ?>
     </tbody>
 </table>
-
-<?php include("../../layouts/footer.php"); ?>
+<?php require_once __DIR__ . "/../../layouts/footer.php" ?>

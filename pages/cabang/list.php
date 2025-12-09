@@ -11,6 +11,7 @@
             <th>Nama Cabang</th>
             <th>Alamat</th>
             <th>Telepon</th>
+            <th>Kepala Cabang</th>
             <th>Aksi</th>
         </tr>
     </thead>
@@ -30,6 +31,7 @@
                 <td>{$row['nama_cabang']}</td>
                 <td>{$row['alamat_cabang']}</td>
                 <td>{$row['no_telp']}</td>
+                <td>{$row['id_kepala_cabang']}</td>
                 <td>
                     <a class='btn btn-warning btn-sm' href='edit.php?id={$row['kode_cabang']}'>Edit</a>
                     <a class='btn btn-danger btn-sm' href='delete.php?id={$row['kode_cabang']}' onclick='return confirm(\"Hapus cabang?\")'>Hapus</a>

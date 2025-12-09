@@ -8,6 +8,6 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark px-3">
-        <a class="navbar-brand" href="/index.php">Dashboard Cabang</a>
+        <a class="navbar-brand" href="/index.php">Dashboard </a>
     </nav>
     <div class="container mt-4">

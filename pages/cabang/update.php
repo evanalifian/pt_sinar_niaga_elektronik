@@ -18,7 +18,7 @@ $sql = "
 ";
 
 if (mysqli_query($conn, $sql)) {
-    header("Location: list.php");
+    header("Location: /pages/cabang/");
     exit;
 } else {
     echo "Error: " . mysqli_error($conn);

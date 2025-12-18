@@ -1,6 +1,6 @@
 <?php require_once __DIR__ . "/../../layouts/header_dashboard.php" ?>
 <h3>Daftar Cabang</h3>
-<a href="add.php" class="btn btn-primary mb-3">Tambah Cabang</a>
+<a href="/pages/cabang/add.php" class="btn btn-primary mb-3">Tambah Cabang</a>
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -30,8 +30,8 @@
                 <td>{$row['no_telp']}</td>
                 <td>{$row['id_kepala_cabang']}</td>
                 <td>
-                    <a class='btn btn-warning btn-sm' href='edit.php?id={$row['kode_cabang']}'>Edit</a>
-                    <a class='btn btn-danger btn-sm' href='delete.php?id={$row['kode_cabang']}' onclick='return confirm(\"Hapus cabang?\")'>Hapus</a>
+                    <a class='btn btn-warning btn-sm' href='/pages/cabang/edit.php?id={$row['kode_cabang']}'>Edit</a>
+                    <a class='btn btn-danger btn-sm' href='/pages/cabang/delete.php?id={$row['kode_cabang']}' onclick='return confirm(\"Hapus cabang?\")'>Hapus</a>
                 </td>
             </tr>";
         }

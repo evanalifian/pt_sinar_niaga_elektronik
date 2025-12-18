@@ -16,4 +16,4 @@ mysqli_query($conn, "INSERT INTO detail_transaksi (id_transaksi, kode_barang, ju
     VALUES ('$id', '$kode', $jumlah, $subtotal)"); 
 
 // redirect kembali ke detail
-header("Location: detail.php?id=$id");
+header("Location: /pages/transaksi/detail.php?id=$id");

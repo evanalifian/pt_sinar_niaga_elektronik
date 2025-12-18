@@ -2,7 +2,7 @@
 
 <h3>Daftar Barang</h3>
 
-<a href="add.php" class="btn btn-primary mb-3">Tambah Barang</a>
+<a href="/pages/barang/add.php" class="btn btn-primary mb-3">Tambah Barang</a>
 
 <table class="table table-bordered table-striped">
     <thead class="table-dark">
@@ -29,8 +29,8 @@
                 <td>Rp ".number_format($row['harga_beli_barang'])."</td>
                 <td>Rp ".number_format($row['harga_jual_barang'])."</td>
                 <td>
-                    <a href='./edit.php?id={$row['kode_barang']}' class='btn btn-warning btn-sm'>Edit</a>
-                    <a href='./delete.php?id={$row['kode_barang']}'
+                    <a href='/pages/barang/edit.php?id={$row['kode_barang']}' class='btn btn-warning btn-sm'>Edit</a>
+                    <a href='/pages/barang/delete.php?id={$row['kode_barang']}'
                        onclick='return confirm(\"Hapus barang?\")'
                        class='btn btn-danger btn-sm'>Hapus</a>
                 </td>

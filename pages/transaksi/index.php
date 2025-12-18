@@ -1,6 +1,6 @@
 <?php require_once __DIR__ . "/../../layouts/header_dashboard.php" ?>
 <h3>Daftar Transaksi</h3>
-<a href="add.php" class="btn btn-primary mb-3">Tambah Transaksi</a>
+<a href="/pages/transaksi/add.php" class="btn btn-primary mb-3">Tambah Transaksi</a>
 <table class="table table-bordered">
     <thead>
         <tr>

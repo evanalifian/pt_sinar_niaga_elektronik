@@ -12,7 +12,7 @@ $sql = "INSERT INTO cabang (kode_cabang, nama_cabang, alamat_cabang, no_telp, id
         VALUES ('$kode', '$nama', '$alamat', '$telp', '$kepala_cabang')";
 
 if (mysqli_query($conn, $sql)) {
-    header("Location: list.php");
+    header("Location: /pages/cabang/");
 } else {
     echo mysqli_error($conn);
 }

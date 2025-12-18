@@ -11,7 +11,7 @@ $sql = "INSERT INTO pelanggan (id_pelanggan, nama_pelanggan, alamat_pelanggan, n
         VALUES ('$id', '$nama', NULL, '$telp', '$email')";
 
 if (mysqli_query($conn, $sql)) {
-    header("Location: list.php");
+    header("Location: /pages/pelanggan/");
 } else {
     echo mysqli_error($conn);
 }

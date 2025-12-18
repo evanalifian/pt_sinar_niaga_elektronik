@@ -51,7 +51,7 @@ if ($password == "") {
 }
 
 if (mysqli_query($conn, $sql)) {
-    header("Location: list.php");
+    header("Location: /pages/pegawai/");
 } else {
     echo "Error: " . mysqli_error($conn);
 }

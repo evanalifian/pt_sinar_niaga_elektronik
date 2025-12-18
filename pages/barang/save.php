@@ -13,7 +13,7 @@ $sql = "INSERT INTO barang VALUES (
 )";
 
 if (mysqli_query($conn, $sql)) {
-  header("Location: list.php");
+  header("Location: /pages/barang/");
 } else {
   echo mysqli_error($conn);
 }

@@ -6,4 +6,4 @@ $id = $_GET['id'];
 
 mysqli_query($conn, "DELETE FROM pegawai WHERE id_pegawai='$id'");
 
-header("Location: list.php");
+header("Location: /pages/pegawai/");

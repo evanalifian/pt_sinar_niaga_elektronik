@@ -17,6 +17,6 @@ $sql = "UPDATE barang SET
         WHERE kode_barang='$kode'";
 
 mysqli_query($conn, $sql);
-header("Location: list.php");
+header("Location: /pages/barang/");
 ?>
   

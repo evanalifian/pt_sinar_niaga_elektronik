@@ -12,7 +12,7 @@ $sql = "INSERT INTO transaksi (id_transaksi, tanggal_transaksi, total_transaksi,
         VALUES ('$id', '$tgl', 0, '$pel', '$peg', '$cab')";
 
 if (mysqli_query($conn, $sql)) {
-    header("Location: detail.php?id=$id");
+    header("Location: /pages/transaksi/detail.php?id=$id");
 } else {
     echo mysqli_error($conn);
 }

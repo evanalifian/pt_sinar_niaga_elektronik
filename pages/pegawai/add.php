@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 <?php require_once __DIR__ . "/../../layouts/header_dashboard.php" ?>
-=======
-<?php include("../../layouts/header.php"); ?>
-<?php include("../../config/database.php"); ?>
-
->>>>>>> 57bf0df736e1eb52645ed6d919497a07f9c49ace
 <h3>Tambah Pegawai</h3>
 <form action="save.php" method="post">
 

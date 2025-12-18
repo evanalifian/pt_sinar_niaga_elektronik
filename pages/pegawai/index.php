@@ -1,6 +1,6 @@
 <?php require_once __DIR__ . "/../../layouts/header_dashboard.php" ?>
 <h3>Daftar Pegawai</h3>
-<a href="./add.php" class="btn btn-primary mb-3">Tambah Pegawai</a>
+<a href="/pages/pegawai/add.php" class="btn btn-primary mb-3">Tambah Pegawai</a>
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -27,8 +27,8 @@
                     <td>{$row['jabatan']}</td>
                     <td>{$row['nama_cabang']}</td>
                     <td>
-                        <a href='./pegawai/edit.php?id={$row['id_pegawai']}' class='btn btn-warning btn-sm'>Edit</a>
-                        <a href='./pegawai/delete.php?id={$row['id_pegawai']}' class='btn btn-danger btn-sm' onclick='return confirm(\"Hapus pegawai?\")'>Hapus</a>
+                        <a href='/pages/pegawai/edit.php?id={$row['id_pegawai']}' class='btn btn-warning btn-sm'>Edit</a>
+                        <a href='/pages/pegawai/delete.php?id={$row['id_pegawai']}' class='btn btn-danger btn-sm' onclick='return confirm(\"Hapus pegawai?\")'>Hapus</a>
                     </td>
                 </tr>
             ";

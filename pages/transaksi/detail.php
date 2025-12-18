@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . "/../../layouts/header.php" ?>
+<?php require_once __DIR__ . "/../../layouts/header_dashboard.php" ?>
 <?php
 $id = $_GET['id'];
 // transaksi header
@@ -54,4 +54,4 @@ $th = mysqli_fetch_assoc(mysqli_query($conn, "SELECT t.*, p.nama_pelanggan FROM 
 </table>
 <p><strong>Total: Rp <?php echo number_format($total); ?></strong></p>
 <a href="list.php" class="btn btn-secondary">Kembali</a>
-<?php require_once __DIR__ . "/../../layouts/footer.php" ?>
+<?php require_once __DIR__ . "/../../layouts/footer_dashboard.php" ?>

@@ -10,26 +10,26 @@
     <div class="col-md-3">
         <div class="card p-3 text-center">
             <h4>Pelanggan</h4>
-            <a href="pages/pelanggan/list.php" class="btn btn-primary mt-2">Kelola</a>
+            <a href="pages/pelanggan/index.php" class="btn btn-primary mt-2">Kelola</a>
         </div>
     </div>
     <div class="col-md-3">
         <div class="card p-3 text-center">
             <h4>Barang</h4>
-            <a href="pages/barang/list.php" class="btn btn-primary mt-2">Kelola</a>
+            <a href="pages/barang/index.php" class="btn btn-primary mt-2">Kelola</a>
         </div>
     </div>
     <div class="col-md-3">
         <div class="card p-3 text-center">
             <h4>Cabang</h4>
-            <a href="pages/cabang/list.php" class="btn btn-primary mt-2">Kelola</a>
+            <a href="pages/cabang/index.php" class="btn btn-primary mt-2">Kelola</a>
         </div>
     </div>
 
     <div class="col-md-3 mt-5">
         <div class="card p-3 text-center">
             <h4>Transaksi</h4>
-            <a href="pages/transaksi/list.php" class="btn btn-primary mt-2">Kelola</a>
+            <a href="pages/transaksi/index.php" class="btn btn-primary mt-2">Kelola</a>
         </div>
     </div>
 </div>
